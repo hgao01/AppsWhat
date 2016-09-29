@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+style="@style/MatchMatch.Vertical">
+
+<LinearLayout style="@style/MatchMatch.Vertical">
+
+    <LinearLayout style="@style/MatchAuto.Vertical">
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:padding="1dp">
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            style="@style/MatchMatch"
+            android:layout_marginTop="7dp"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <TextView
+        style="@style/WrapWrap"
+        android:text="Home Page Buttons " />
+
+    <RadioGroup
+        android:id="@+id/rg_main_tab"
+        style="@style/MatchWrap.Horizontal"
+        android:background="@drawable/layer_maintab_bg"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/brb_main_home"
+            style="@style/RbMainTab"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="Home"
+            android:padding="6dp" />
+
+        <RadioButton
+            android:id="@+id/brb_main_message"
+            style="@style/RbMainTab"
+            android:drawableTop="@drawable/selector_tab_message"
+            android:text="Chat"
+            android:layout_marginLeft="15dp"
+            android:padding="6dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/brb_main_discover"
+            style="@style/RbMainTab"
+            android:drawableTop="@drawable/selector_tab_discover"
+            android:text="Friend"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:textSize="10sp"
+            android:checked="true"
+            android:allowUndo="true" />
+
+        <RadioButton
+            android:id="@+id/brb_main_me"
+            style="@style/RbMainTab"
+            android:drawableTop="@drawable/selector_tab_me"
+            android:text="Setting"
+            android:layout_marginLeft="10dp"
+            android:checked="false"
+            android:layout_marginTop="3dp" />
+    </RadioGroup>
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
